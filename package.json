@@ -9,7 +9,8 @@
     "flow start": "flow start",
     "flow stop": "flow stop",
     "flow status": "flow status",
-    "flow coverage": "flow coverage"
+    "flow coverage": "flow coverage",
+    "sim": "react-native run-ios --simulator 'iPhone 8'"
   },
   "dependencies": {
     "axios": "^0.18.0",

@@ -21,11 +21,19 @@ const styles = {
     paddingBottom: 10,
   },
 };
-const Button = () => {
+type Props = {
+  onPress: any,
+  children: any,
+};
+
+const Button = (props: Props) => {
   const { buttonStyle, textStyle } = styles;
+  const { onPress, children } = props;
   return (
-    <TouchableOpacity style={buttonStyle}>
-      <Text style={textStyle} > Click me!!</Text>
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+      <Text style={textStyle} >
+        {children}
+      </Text>
     </TouchableOpacity>
   );
 };
